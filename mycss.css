@@ -1,0 +1,24 @@
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 4px solid rgb(255, 211, 211);
+    text-align: center;
+
+}
+h2{
+    color: hsl(308, 100%, 22%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav{
+    float: left;
+}
+section{
+    width: 60%;
+    float: left;
+}
+article {
+    height: 150px;
+    border-color: black;
+    border: 1px;
+    border-style:  dotted;
+    background-color:  rgb(180, 221, 248);
+}
