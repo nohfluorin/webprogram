@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<title>시맨틱 태그로 구조화 연습</title>
+<head>
+    <link rel="stylesheet" href="mycss.css">
+</head>
+
+<body>
+
+    <!-- 헤더 -->
+    <header>
+        <h1>학습관련 study 📚📝</h1>
+        <p>2024년 학습하고 있는 내용입니다.</p>
+    </header>
+
+    <!-- 목차 만들기 -->
+    <nav>
+        <h2>목차</h2>
+        <ul> <!-- 순서를 주고 싶다면 ol 사용 -->
+            <li><a href="#파이썬">파이썬</a></li>
+            <li><a href="#데이터 시각화">데이터 시각화</a></li>
+            <li><a href="#데이터 분석">데이터 분석</a></li>
+            <li><a href="#자격증">자격증</a></li>
+        </ul>
+        <h2>기타</h2>
+        <ol>
+            <li>자격증</li>
+        </ol>
+    </nav>
+
+    <!-- 섹션 -->
+    <section>
+        <article id = "py">
+            <h2>파이썬 (python)</h2>
+            <p>파이썬은 귀도 반 로섬이 발표한 프로그래밍 언어이다. 인터프리터를 사용하는 객체지향 언어이며 동적 타이핑 대화형 언어이다.</p>
+        </article>
+        <article id = "data visualization">
+            <h2>데이터 시각화 (data visualization)</h2>
+            <p>데이터 분석 결과를 쉽게 이해할 수 있도록 시각적으로 표현하고 전달하는 과정이다.</p>
+            <textarea name="feedback" rows="2" cols="60">
+            </textarea>
+        </article>
+        <article id= "data analysis">
+            <h2>데이터 분석 (data analysis)</h2>
+            <p>어떤 기존 시스템 또는 계획 중인 시스템에서 데이터와 데이터의 흐름을 체계적으로 조사하는 것이다.</p>
+        <article id = "license">
+            <h2>자격증 <h/2></h>
+            <h4>빅데이터분석기사</h4>
+            <p>빅데이터분석기사는 빅데이터 이해를 기반으로 빅데이터 분석 기획, 수집, 저장, 처리, 분석 및 시각화를 수행하는 실무자이다.</p>
+            </h2>
+        </article>
+        <h2>조사입니다. </h2>
+        <h4>성별을 선택해 주세요.</h4>
+            <form>
+                성별 :
+                    <input type="radio" name="gender" value="male">남성
+                    <input type="radio" name="gender" value="female">여성 <br>
+                    <h4>학년을 선택해주세요.</h4>
+                학년 :
+                    <input type="number" min="1" max="4">
+                    <h4>관심이 있는 것을 선택해 주세요.</h4>
+                선택 :
+                    <input type="checkbox" name="fruits" value="apple" checked>파이썬
+                    <input type="checkbox" name="fruits" value="grape">데이터 시각화
+                    <input type="checkbox" name="fruits" value="grape">데이터 분석
+                    <input type="checkbox" name="fruits" value="orange">빅데이터분석기사
+                    <h4>프로그래밍 스킬</h4>
+                스킬 :
+                    <input type="range" min="1" max="10" value="1"><br>
+                    <input type="submit" value="제출" />
+
+            </form>
+    </section>
+
+</body>
+</html>
