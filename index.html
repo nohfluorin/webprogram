@@ -1,48 +1,148 @@
-<!--주석 처리-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TitleTest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
 </head>
+<style>
+    #page{
+        font-family: 'Times New Roman', Times, serif;
+        background-color: rgb(255, 233, 233);
+        text-align: center;
+        border: 10px dotted rgb(164, 5, 5);
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    #apple{
+        text-align: center;
+    }
+
+    section {
+    float: left; width: 65%; height: 80%; 
+    background-color: rgb(252, 252, 234);
+    }
+
+    #art1{
+        text-align: center;
+    }
+
+    nav {
+        float: left; width: 15%; height: 80%; 
+        background: rgba(255, 223, 239, 0.775);
+    }
+
+
+    aside{
+        float: right; width: 20%; height: 100%;
+        background-color: rgb(225, 243, 250);
+    }
+
+    #menu{
+        list-style: none;
+        text-align: center;
+        border-bottom: 1px solid red;
+        border-top: 1px solid red;
+        padding: 10px
+    }    
+
+    #menu li {
+    display: inline; /* 메뉴를 가로로 배치 */
+    padding: 10px;
+    text-transform: uppercase; 
+    } 
+
+    a {
+    text-decoration: none; /* 모든 링크에 대해 밑줄 제거 */
+    }
+
+
+
+</style>
 <body>
-    <p>
-        <h1>학교로고</h1>
-        <img src = "학교로고.png" alt="">
+ <header>
+    <h1 id="page">🎈 MY PAGE 🎀 </h1><br>
+    <h3 id="apple">경주의 공간에 온걸 환영합니다 🤍</h3><br>
+ </header>
 
-        <h1>학과소개</h1>
-        <a href = "https://www.dju.ac.kr/big_data_ai/main.do">빅데이터학과</a>
-    </p>
 
-    <p>
-        <h1>취미</h1>
-        <a href = "https://www.youtube.com/results?search_query=%EB%8F%99%EB%AC%BC%EC%9D%98+%EC%88%B2">동물의 숲</a> <br>
-        <a href = "https://www.youtube.com/@aonioni">아오니</a>
+ <ul id="menu">
+    <li><a href="#">Menu1</a></li>
+    <li><a href="#">Menu2</a></li>
+    <li><a href="#">Menu3</a></li>
+    
+</ul>
 
-    </p>
 
-    <p>
-        <h1>관심분야</h1>
-        <a href = "https://www.youtube.com/results?search_query=%EB%8F%99%EB%AC%BC%EC%9D%98+%EC%88%B2">동물의 숲</a>
-    </p>
-    <p><a href="3주차.html">학습관련</a></p>
-    <p>
-        <h1>추천 앱 리스트</h1>
-        <ul>
-            <li>인스타그램</li>
-            <li>크림</li>
-            <img src = "pngegg.png" alt="" width="100" height="100">
-            <img src = "크림.png" alt="" width="200" height=>
-        </ul>
-    </p>   
 
-    <p>
-        <h1>즐겨찾는 유튜버</h1>
-        <ul>
-            <li>아오니</li>
-        </ul>
-    </p>
+ <nav>
+ <ul>
+    <li><a href="pr.html"> 저를 소개합니다 :^) </a></li> <br>
+    <li><a href="hobby.html"> 취미 </a></li> <br>
+    <li><a href="3주차.html"> 들어와봐요 </a></li> <br>
+    <li><a href="study.html"> 공부입니다 </a></li> <br>
+ </ul>
+ </nav>
+ 
+ <section>
+    <article id="art1">
+        <h2>들어와 주셔서 감사해요 *(੭*ˊᵕˋ)੭*ଘ</h2>
+        <p>열심히 만들어가는 공간입니다 !</p>
+    </article>
+ <br>
+ <br>
+ <br>
+    <article>
+        <h2>🐈🐈‍⬛ 고양이들 🐈🐈‍⬛</h2>
+    </article>
 
+    <figure>
+        <img src="images/노랭이.jpg" alt="" width="250" height="250">
+        <img src="images/탄이.jpg" alt="" width="250" height="250">
+    </figure>
+
+    <figcaption>저와 같이 살고 있는 노랭이와 탄이입니다 🐈🐈‍⬛</figcaption>
+ <br>
+ <br>
+    <h2>유입 경로를 알려주세요 ! </h2>
+    <p>다 작성하셨으면 아래 제출하기를 눌러주세요.</p>
+        <textarea name="area1" id="" cols="40" rows="5"></textarea>
+
+        <script>
+            function showDialog() {
+                alert("작성해주셔서 감사합니다 ^^ 행복한 하루 보내세요구르트 🍀");
+            }
+        </script>
+
+            <button onclick="showDialog()">제출하기</button>
+        
+        <h2>더 ✨멋진✨ 화면을 만들기 위해 감상 후기 부탁드립니당 ✧( •̀ .̫ •́ )✧</h2>
+            <form>
+                ✅ 디자인 :
+                <input type="radio" name="bad" value="bad1">나쁨
+                <input type="radio" name="soso" value="soso1">보통
+                <input type="radio" name="good" value="good1">너무 좋아요!!!! <br> <br>
+            </form>
+            <p>✅ 수정했으면 하는 부분이나 하고 싶은 말 적어주세요 🙂‍</p>
+            <textarea name="riv" id="" cols="40" rows="5"></textarea>
+        <script>
+            function rev() {
+                alert("적어주셔서 감사합니다람쥐 행복하세요 🍀")
+            }
+        </script>
+
+            <button onclick="rev()">! 입력완료 !</button>
+</form>
+
+ </section>
+ 
+<aside>
+<p>SNS 바로가기<p>
+    <a href="https://blog.naver.com/nohfluorine"><img src="images/네이버 AI-06.png" alt="" height="50" height="50"></a>
+    <a href="https://www.instagram.com/nohfluorine.kr?igsh=bXRoN3p1Mzd5a2tw&utm_source=qr"><img src="images/pngegg.png" alt="" height="45" height="45"></a>
+</aside>
+    
 
 </body>
 </html>
