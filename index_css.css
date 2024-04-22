@@ -1,0 +1,51 @@
+#page{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(255, 233, 233);
+    text-align: center;
+    border: 10px dotted rgb(164, 5, 5);
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 45px;
+}
+
+#apple{
+    text-align: center;
+}
+
+section {
+float: left; width: 65%; height: 80%; 
+background-color: rgb(252, 252, 234);
+}
+
+#art1{
+    text-align: center;
+}
+
+nav {
+    float: left; width: 15%; height: 80%; 
+    background: rgba(255, 223, 239, 0.775);
+}
+
+
+aside{
+    float: right; width: 20%; height: 100%;
+    background-color: rgb(225, 243, 250);
+}
+
+#menu{
+    list-style: none;
+    text-align: center;
+    border-bottom: 1px solid red;
+    border-top: 1px solid red;
+    padding: 10px
+}    
+
+#menu li {
+display: inline; /* 메뉴를 가로로 배치 */
+padding: 10px;
+text-transform: uppercase; 
+} 
+
+a {
+text-decoration: none; /* 모든 링크에 대해 밑줄 제거 */
+}

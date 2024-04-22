@@ -1,0 +1,13 @@
+#pr{
+    text-align: center;
+    background-color: rgb(230, 254, 255);
+    font-style: oblique;
+    font-weight: unset;    
+    }
+
+section{
+    background-color: rgb(231, 240, 255);
+    width: 80%; height: 500px;
+}
+
+.left {float: left}
