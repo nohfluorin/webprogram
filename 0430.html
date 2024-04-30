@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>        
+
+        let d = Date();
+        let d1 = new Date(2024, 12, 25);
+        let d2 = new Date("April 30 2024")
+        document.write(d + "<br>");
+        document.write(d1 + "<br>");
+        document.write(d2 + "<br>");
+        document.write(d1.getFullYear() + "년" + "<br>");
+        document.write(d1.getMonth() + "월" + "<br><br><br>"); 
+
+
+        // 남은 일수 계산하기
+        let date = Date();
+        let date1 = new Date("04/30/2024");
+        let date2 = new Date("12/25/2024");
+        let diff = date2.getTime() - date1.getTime();
+        let diff_days = diff / (1000 * 3600 * 24);
+        document.write(date + "<br>")
+        document.write(
+            date1 + " 와 <br>"
+            + date2 + "<br> 날짜 간의 총 일수 : "
+            + diff_days + "일 남았습니다.");
+        
+    </script>
+    <br>
+    <br>
+    <!-- 시계 만들기 -->
+    <h2>시계만들기</h2>
+    <h2 id = 'clock'></h2>
+    <script>
+        function setClock() {
+            let now = new Date();
+            let s = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+            document.getElementById('clock').innerHTML = s;
+
+            setTimeout('setClock()', 1000);  
+        }
+        setClock();
+        // setTimeout을 사용해 1초 단위로 시간이 흐름
+    </script>
+    <br>
+    <br>
+    <script>
+        let sLiteral = "문자열 리터럴";
+
+        sObject = new String("문자열 객체");
+
+        document.writeln(typeof (sLiteral) + '<br>');
+        document.writeln(typeof (sObject) + '<br>');
+
+    </script>
+    <br>
+    <br>
+    <script>
+        function checkID() {
+            let y = document.getElementById("ID").value;
+            if(s.length < 5)
+            alert("아이디는 5글자 이상이어야 합니다.");
+        }
+
+    </script>
+        아이디 : <input type="text" id = "id" size=10>
+        <button onclick="checkID()">검사</button>
+</body>
+</html>
